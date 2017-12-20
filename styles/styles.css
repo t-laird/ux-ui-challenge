@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600");
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+  padding: 0px; }
+
+main {
+  background-color: #262626;
+  min-height: 100vh;
+  padding-bottom: 80px; }
+  main header nav {
+    background: #4A768C;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px; }
+    main header nav img {
+      transition: 0.5s; }
+      main header nav img:hover {
+        transform: rotate(3deg); }
+    main header nav div {
+      position: absolute;
+      right: 0px;
+      top: 24px; }
+      main header nav div h3 {
+        width: 100px;
+        margin: 0px;
+        color: #dbe3e6; }
+        main header nav div h3:hover {
+          color: #ffffff; }
+        main header nav div h3 span {
+          width: 100%;
+          color: #1d2628; }
+  main section {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 80%;
+    margin: 0px auto;
+    transition: 1s; }
+    main section h1.subtitle {
+      color: white;
+      width: 100%;
+      font-weight: 300;
+      margin-left: 5px; }
+    main section article {
+      border-radius: 5px; }
+  main section.schedule {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    width: 825px; }
+    main section.schedule h4.sub-subtitle {
+      width: 100%;
+      padding-bottom: 20px;
+      margin-left: 5px;
+      font-weight: 300;
+      color: #b6b6b6; }
+    main section.schedule img.arrow {
+      height: 30px;
+      width: 30px;
+      position: absolute;
+      top: 160px;
+      border-radius: 100%;
+      box-shadow: 1px 1px 3px 1px #949292;
+      transition: 0.7s; }
+      main section.schedule img.arrow:hover {
+        box-shadow: none; }
+    main section.schedule img.arrow-right {
+      right: -40px; }
+    main section.schedule img.arrow-left {
+      left: -47px; }
+    main section.schedule article {
+      background-color: white;
+      width: 150px;
+      height: 199px;
+      margin: 0px 10px 0px 5px;
+      margin-bottom: 20px;
+      position: relative; }
+      main section.schedule article h1 {
+        background: #4A768C;
+        padding: 12px 0px;
+        text-align: center;
+        color: #e6e6e6;
+        font-weight: 300;
+        border-radius: 5px 5px 0px 0px; }
+      main section.schedule article p {
+        text-align: center;
+        padding: 5px;
+        font-weight: 300; }
+      main section.schedule article img {
+        height: 27px;
+        width: 27px;
+        position: absolute;
+        bottom: 5px;
+        right: 5px; }
+  main section.log {
+    width: 840px; }
+    main section.log h1 {
+      margin-bottom: 20px; }
+    main section.log article {
+      background: white;
+      height: 250px;
+      width: 400px;
+      margin-left: 5px; }
+      main section.log article:nth-of-type(1) {
+        margin-bottom: 30px;
+        margin-right: 30px; }
+        main section.log article:nth-of-type(1) table {
+          width: 100%;
+          height: 100%;
+          padding: 10px 20px; }
+          main section.log article:nth-of-type(1) table tbody {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%; }
+            main section.log article:nth-of-type(1) table tbody tr {
+              width: 100%; }
+              main section.log article:nth-of-type(1) table tbody tr td {
+                border: none;
+                font-weight: 300; }
+                main section.log article:nth-of-type(1) table tbody tr td:nth-of-type(1) {
+                  width: 100px; }
+                main section.log article:nth-of-type(1) table tbody tr td:nth-of-type(2) {
+                  width: calc(100% - 100px); }
+            main section.log article:nth-of-type(1) table tbody tr.table-header {
+              border-bottom: 4px solid #4A768C;
+              padding-bottom: 10px; }
+  main section.goals {
+    width: 690px;
+    justify-content: space-between; }
+    main section.goals h1 {
+      margin-bottom: 20px; }
+    main section.goals article {
+      width: 190px;
+      height: 190px;
+      margin-left: 5px;
+      background-color: white;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: flex-start; }
+      main section.goals article h4 {
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+        margin: 5px 0px -10px 0px; }
+      main section.goals article input {
+        margin-right: 20px;
+        margin-top: 5px;
+        height: 20px;
+        width: 20px; }
+      main section.goals article span {
+        width: 100%;
+        padding: 0px 15px;
+        position: relative;
+        display: flex;
+        font-weight: 300; }
+        main section.goals article span .x-highlight {
+          color: #4A768C;
+          position: absolute;
+          right: 5px;
+          width: initial; }
+
+@media screen and (max-width: 660px) {
+  main header {
+    height: 200px; }
+    main header nav {
+      flex-wrap: wrap;
+      height: 100%; }
+      main header nav div {
+        position: static;
+        width: 100%; }
+        main header nav div h3 {
+          margin: 0px auto; } }
+
+@media screen and (max-width: 730px) {
+  main section.goals {
+    width: 440px; }
+    main section.goals article {
+      margin-bottom: 30px; } }
+
+@media screen and (max-width: 490px) {
+  main section.goals {
+    width: 210px; } }
+
+@media screen and (max-width: 860px) {
+  main section.log {
+    width: 420px; } }
+
+@media screen and (max-width: 430px) {
+  main section.log {
+    width: 350px; }
+    main section.log article {
+      width: 350px;
+      height: 300px; }
+      main section.log article:nth-of-type(2) {
+        height: 220px;
+        margin-bottom: 30px; } }
+
+@media screen and (max-width: 940px) {
+  main section.schedule {
+    width: 660px; } }
+
+@media screen and (max-width: 780px) {
+  main section.schedule {
+    width: 495px; } }
+
+@media screen and (max-width: 630px) {
+  main section.schedule {
+    width: 330px; } }
+
+@media screen and (max-width: 450px) {
+  main section.schedule {
+    width: 165px; } }
